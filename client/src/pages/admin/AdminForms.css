@@ -1,0 +1,134 @@
+
+.admin-form-container {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 900px;
+  margin: 40px auto;
+  color: white;
+}
+
+.section-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  border-radius: 16px;
+  margin-bottom: 25px;
+}
+
+.section-card h3 {
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.section-card textarea {
+  width: 100%;
+  min-height: 100px;
+  border-radius: 10px;
+  padding: 10px;
+  border: none;
+  margin-top: 10px;
+}
+
+.primary-btn {
+  background: linear-gradient(45deg, #f97316, #ea580c);
+  border: none;
+  padding: 12px 25px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.admin-form-container input,
+.admin-form-container textarea,
+.admin-form-container select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: none;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.admin-form-container select {
+  background: white;
+  color: black;
+}
+
+.admin-form-container {
+  max-width: 700px;   /* smaller width */
+  width: 95%;
+  margin: 40px auto;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.section-content {
+  margin-top: 15px;
+  animation: fadeIn 0.3s ease;
+}
+
+
+
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  background-color: #ccc;
+  border-radius: 24px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 0.3s;
+}
+
+.slider:before {
+  content: "";
+  position: absolute;
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+input:checked + .slider {
+  background-color: #4CAF50;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.admin-layout {
+  display: flex !important;
+  min-height: 100vh !important;
+  width: 100vw !important;
+}
+
+.admin-main {
+  flex: 1 !important;
+  min-height: 100vh !important;
+  width: 100% !important;
+}
